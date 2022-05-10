@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Image to use:</p>
+
+<img id="gato" width="220" height="277"
+src="./gatinho.jpg" alt="gatinho">
+
+<p>Canvas:</p>
+
+<canvas id="gatofofo" width="600" height="600"
+style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.
+</canvas>
+
+<script>
+window.onload = function() {
+    var canvas = document.getElementById("gatofofo");
+    var ctx = canvas.getContext("2d");
+    var img = document.getElementById("gato");
+   ctx.drawImage(img, 10, 10);
+};
+</script>
+
+</body>
+</html>
