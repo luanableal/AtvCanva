@@ -4,21 +4,21 @@
 
 <p>Image to use:</p>
 
-<img id="gato" width="220" height="277"
-src="./gatinho.jpg" alt="gatinho">
+<img id="smile" width="220" height="277"
+src="./smile.svg" alt="smile">
 
 <p>Canvas:</p>
 
-<canvas id="gatofofo" width="600" height="600"
+<canvas id="carinha" width="600" height="600"
 style="border:1px solid #d3d3d3;">
 Your browser does not support the HTML5 canvas tag.
 </canvas>
 
 <script>
 window.onload = function() {
-    var canvas = document.getElementById("gatofofo");
+    var canvas = document.getElementById("carinha");
     var ctx = canvas.getContext("2d");
-    var img = document.getElementById("gato");
+    var img = document.getElementById("smile");
    ctx.drawImage(img, 10, 10);
 };
 </script>
